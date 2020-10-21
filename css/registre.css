@@ -1,0 +1,26 @@
+main{
+	text-align: center;
+	background-image: url(../imatges/fondo_registre.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+main>form{
+	padding: 10vw 0;
+}
+
+main>form>input{
+	text-align: center;
+	padding: 0.5vw;
+	margin: 0.5vw 0;
+	width: 20vw;
+}
+main>form>input:last-of-type{
+	width: 15vw;
+}
+main>form>p{
+	background-color: rgba(255,255,255,0.6);
+	padding: 2vw;
+	font-size: 2vw;
+	margin: 0 30vw;
+}
