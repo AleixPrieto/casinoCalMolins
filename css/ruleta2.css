@@ -17,6 +17,9 @@ main>form>input{
 	padding: 1vw;
 	
 }
+#numero{
+	height: 500px;
+}
 #numero>form>label{
 	font-size: 2vw;
 	color: #fff;

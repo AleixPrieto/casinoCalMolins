@@ -5,6 +5,7 @@ require 'config/login.php';
 $opciones["location"]="http://localhost/Casino/server.php";
 $opciones["uri"]="http://localhost/Casino/server.php";
 $cliente=new SoapClient(NULL,$opciones);
+$tirada = "";
 
 if(isset($_SESSION['nick'])){
     $nick = $_SESSION['nick']; //Guardo el nick de la sessió en una veriable
@@ -92,8 +93,8 @@ if(isset($_SESSION['nick'])){
 		<title>Classic Roulette</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/estils.css" />
-        <link rel="stylesheet" type="text/css" href="css/ruleta.css" />
+		<link rel="stylesheet" type="text/css" href="css/estils2.css" />
+        <link rel="stylesheet" type="text/css" href="css/ruleta2.css" />
 		<meta name="descriptions" content="">
         <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="media/mobil.css" media="screen and (max-width: 500px)" />
@@ -139,7 +140,7 @@ if(isset($_SESSION['nick'])){
                     <?php}
                     
                     if(isset($tirada)){
-                            
+                            echo "hola";
                         if(in_array($tirada, [1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36])){?>
                                 <p style = "background-color:#f00;color:#fff;border-radius: 50px;"><?php echo $tirada?></p><?php
                             }elseif(in_array($tirada, [2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35] )){?>
